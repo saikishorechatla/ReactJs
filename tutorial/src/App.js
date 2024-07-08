@@ -1,15 +1,18 @@
 import "./App.css";
-// import UseState1 from './useState/UseState1';
-// import UseStateArray from './useState/UseStateArray';
+import Page from "./useEffect/FetchData";
 
-import UseStateCounter from "./useState/UseStateCounter";
+
+
 
 function App() {
   return (
     <div className="container">
-      <UseStateCounter></UseStateCounter>
+       {/* <SmallFunction></SmallFunction>
+      <UseStateCounter></UseStateCounter> */}
       {/* <UseState1/> */}
-      {/* <UseStateArray/> */}
+      <Page/>
+
+
     </div>
   );
 }
