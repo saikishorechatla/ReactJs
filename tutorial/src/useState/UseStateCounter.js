@@ -14,7 +14,7 @@ export default function useStateCounter() {
          }}>decrease</button>
          <button onClick={reset}>reset</button>
          <button onClick={()=>{
-           setValue(pre=>pre-1)
+           setValue(pre=>pre+1)
          }} >increase</button>
      </div>
    )
