@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+// import {useCustom} from './useCustom'
 
 function FetchData() {
     const [data,setData] =useState([])
+      //  const {data,loading,error} =useCustom('https://api.github.com/users/1')
     useEffect(()=>{
       const getData = async() =>{
          let apiData =await  axios.get('https://api.github.com/users/1')
@@ -12,6 +14,8 @@ function FetchData() {
       }
       getData()
     },[])
+    //  if(loading) return <h1>Please Wait Loading ...</h1>
+    //  if(error)   return <h1>{error}</h1>
   return (
     <div>
       <table>
