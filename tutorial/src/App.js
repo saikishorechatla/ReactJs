@@ -1,18 +1,11 @@
 import "./App.css";
-import Page from "./useEffect/FetchData";
 
-
-
+import Page from './useRef/UseRef'
 
 function App() {
   return (
     <div className="container">
-       {/* <SmallFunction></SmallFunction>
-      <UseStateCounter></UseStateCounter> */}
-      {/* <UseState1/> */}
       <Page/>
-
-
     </div>
   );
 }
