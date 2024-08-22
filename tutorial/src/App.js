@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-
+import DataAPI from "./DataAPI";
+import {Provider} from './qwerty/Provider'
 const RestaurantCards = (props) => {
   console.log(props);
   const { resData } = props;
@@ -36,12 +37,14 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <h1>Restaurant Cards</h1>
-      {data.map((val, index) => (
-        <RestaurantCards key={index} resData={val} />
-      ))}
-    </div>
+    // <div className="container">
+      // <DataAPI/>
+      <Provider></Provider>
+      // <h1>Restaurant Cards</h1>
+    //   {data.map((val, index) => (
+    //     <RestaurantCards key={index} resData={val} />
+    //   ))}
+    // </div>
   );
 }
 
